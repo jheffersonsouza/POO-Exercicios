@@ -18,7 +18,7 @@ def calcular_distancia(ponto1, ponto2):
 
 
 def verificar_igualdade_com_tolerancia(segmento_A, segmento_B):
-    return math.isclose(segmento_A, segmento_B, rel_tol=0.05, )
+    return math.isclose(segmento_A, segmento_B, rel_tol=0.05)
 
 
 def verificar_triangulo(A, B, C):

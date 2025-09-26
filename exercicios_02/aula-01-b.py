@@ -17,9 +17,9 @@ def mostrar(pontos):
     print('-' * 25)
 
 def _gerar_equilatero():
-    A = Ponto(0, 0)
-    B = Ponto(1.0, 0)
-    C = Ponto(0.87, 0.5)
+    A = Ponto(1, 1)
+    B = Ponto(2.0, 1)
+    C = Ponto(1.87, 1.5)
     pontos = [A, B, C]
 
     k = random.randint(1, 10)

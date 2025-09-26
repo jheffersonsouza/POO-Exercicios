@@ -1,52 +1,64 @@
-
-
 # solicitar o tipo do triangulo e gerar os pontos.
-
-index = 1
-
-def getIndex():
-    return index
-
-
-def addIndex(i):
-    global index
-    index += i
+import random
 
 
 class Ponto:
-    def __init__(self):
-        print("-" * 25)
-        print(getIndex(), "º Ponto")
-        self.x = float(input("Digite a coordenada X: "))
-        self.y = float(input("Digite a coordenada Y: "))
-        addIndex(1)
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
 
-def dist(Ponto1, Ponto2):
-    return int(sqrt((Ponto2.x - Ponto1.x) ** 2 + (Ponto2.y - Ponto1.y) ** 2))
+def mostrar(pontos):
+    nomes = ['A', 'B', 'C']
+    print('-' * 25)
+    print('Pontos:')
+    for i, p in enumerate(pontos):
+        print(f'{nomes[i]} = ({p.x:.2f}, {p.y:.2f})')
+    print('-' * 25)
+
+def _gerar_equilatero():
+    A = Ponto(0, 0)
+    B = Ponto(1.0, 0)
+    C = Ponto(0.87, 0.5)
+    pontos = [A, B, C]
+
+    k = random.randint(1, 10)
+    for ponto in pontos:
+        ponto.x = round(ponto.x * k, 2)
+        ponto.y = round(ponto.y * k, 2)
+
+    mostrar([A, B, C])
 
 
-pontos = []
+def _gerar_isosceles():
+    A = Ponto(random.randint(1, 10), random.randint(1, 10))
+    B = Ponto(A.x + 2, A.y)
+    C = Ponto(A.x + 1, A.y + 2)
+    mostrar([A, B, C])
+
+
+def _gerar_escaleno():
+    A = Ponto(random.randint(1, 10), random.randint(1, 10))
+    B = Ponto(A.x + 3, A.y + 1)
+    C = Ponto(A.x + 2, A.y + 4)
+    mostrar([A, B, C])
+
+
 while True:
-    pontos.append(Ponto())
-    opt = input('Deseja continuar? (S/N)').strip().lower()
-    if opt == 'N':
-        break
+    print("""
+Tipos de triângulos:
+1. Equilátero
+2. Isósceles
+3. Escaleno""")
 
-segmento_1 = dist(A, B)
-segmento_2 = dist(A, C)
-segmento_3 = dist(B, C)
-
-if ((segmento_1 + segmento_2 > segmento_3 and
-     segmento_1 + segmento_3 > segmento_2) and
-        segmento_2 + segmento_3 > segmento_1):
-    print('O triângulo existe!')
-    print('Tipo:', end=' ')
-    if segmento_1 == segmento_2 == segmento_3:
-        print('Equilatero')
-    elif segmento_1 == segmento_2 or segmento_1 == segmento_3 or segmento_2 == segmento_3:
-        print('Isósceles')
+    opt = input('Escolha uma opção: ')
+    if opt == '1':
+        _gerar_equilatero()
+    elif opt == '2':
+        _gerar_isosceles()
+    elif opt == '3':
+        _gerar_escaleno()
     else:
-        print('Escaleno')
-else:
-    print('O triângulo não existe!')
+        print('Opção inválida.')
+        continue
+    print()

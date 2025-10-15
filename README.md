@@ -20,3 +20,12 @@ Arquivo `aula-01-b.py` é o algoritmo de geração de 3 pontos que formam um tri
 > Referente a aula do dia 10/10, construir um algoritmo que simula um caixa eletronico.
 
 Todo codigo está em `caixa_eletronico.py`
+
+### Lista 04 (Pasta: exercicios_04)
+> Referente a aula do dia 15/10, construir um algoritmo que verifica CPF
+> e um que simula um estoque de cantina.
+
+Todo codigo do algoritmo de validar cpf está no arquivo `cpf.py`
+Todo codigo do algoritmo de estoque de cantina está no arquivo `cantina.py`
+
+

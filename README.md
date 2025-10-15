@@ -15,3 +15,8 @@ verificar se eles formam um quadrado ou retângulo; Solicitar ao usuario uma ent
 
 Arquivo `aula-01-a.py` é o algoritmo de validação e classificação de triângulo juntamente da validação e classificação de um quadrilatero.<br>
 Arquivo `aula-01-b.py` é o algoritmo de geração de 3 pontos que formam um triângulo de acordo com o tipo solicitado.
+
+### Lista 03 (Pasta: exercicios_03)
+> Referente a aula do dia 10/10, construir um algoritmo que simula um caixa eletronico.
+
+Todo codigo está em `caixa_eletronico.py`

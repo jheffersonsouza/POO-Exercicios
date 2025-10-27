@@ -25,7 +25,11 @@ Todo codigo está em `caixa_eletronico.py`
 > Referente a aula do dia 15/10, construir um algoritmo que verifica CPF
 > e um que simula um estoque de cantina.
 
-Todo codigo do algoritmo de validar cpf está no arquivo `cpf.py`
+Todo codigo do algoritmo de validar cpf está no arquivo `cpf.py`<br>
 Todo codigo do algoritmo de estoque de cantina está no arquivo `cantina.py`
 
+### Lista  05 (Pasta: exercicios_05)
+> Referente a aula do dia 24/10, atividade sobre classes e UML de um sistema bancario
 
+O arquivo `diagrama.png` representa o UML.<br>
+O arquivo `sistema.py` representa o script de acordo com o diagrama.

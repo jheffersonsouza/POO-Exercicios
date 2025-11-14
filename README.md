@@ -33,3 +33,11 @@ Todo codigo do algoritmo de estoque de cantina está no arquivo `cantina.py`
 
 O arquivo `diagrama.png` representa o UML.<br>
 O arquivo `sistema.py` representa o script de acordo com o diagrama.
+
+### Lista  06 (Pasta: exercicios_06) - Atividade sistema UFC
+> Atividade é um CRUD com listas baseados em "BancoLista" adaptado para POO, bsaeado na UFC.
+> Referente as aulas do dia 12/11 e 14/11.
+
+O arquivo `README.md` representa uma documentação da estrutura do script e instruções de uso, conforme o solicitado.
+**Não confundir com o README do repositorio, o readme citado está dentro da pasta de exercicios_06 e é uma documentação extra.**<br>
+O arquivo `sistema_ufc.py` representa o script de acordo com o diagrama.

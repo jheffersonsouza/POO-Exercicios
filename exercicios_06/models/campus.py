@@ -1,4 +1,4 @@
-from exercicios_06.models.Curso import Curso
+from exercicios_06.models.curso import Curso
 
 
 class Campus:

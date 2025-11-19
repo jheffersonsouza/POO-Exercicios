@@ -1,5 +1,4 @@
-from exercicios_06.models.Campus import Campus
-from exercicios_06.models.Curso import Curso
+from exercicios_06.models import Campus, Curso
 
 if __name__ == '__main__':
     todos_campus = []
